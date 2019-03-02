@@ -1,0 +1,48 @@
+/*
+Theme Name: Team Rezner
+Theme URI: http://www.teamrezner.com/
+Description: Child Theme for Wordpress
+Author: SmartyPants Design
+Author URI: http://www.smartypantsdesign.ca/
+Template: lavish
+Version: 0.1
+Last updated:November 2015
+*/
+
+@import url("../lavish/style.css");
+
+/* Google Fonts */
+@import url(http://fonts.googleapis.com/css?family=Indie+Flower);
+
+#la-banner {
+  background-repeat: no-repeat;
+}
+
+.entry-content h3,
+.custtitle {
+  display: none;
+}
+
+@media screen {
+  .home .entry-content h3,
+  .custtitle {
+    display: block !important;
+    text-transform: lowercase;
+  }
+  .home .entry-content h3::after {
+    content: ".";
+  }
+}
+
+/* Print */
+@media print {
+
+}
+
+/* Hide WP Stats Smiley */
+img#wpstats {display:none !important;}
+
+/* Invisible ReCAPTCHA */
+.inv-recaptcha-holder {
+  margin: 15px 0;
+}
